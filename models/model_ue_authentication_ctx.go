@@ -11,7 +11,7 @@ package models
 
 type UeAuthenticationCtx struct {
 	AuthType           AuthType                    `json:"authType" yaml:"authType" bson:"authType"`
-	Av5gAka            *Av5gAka                    `json:"av5gAka" yaml:"av5gAka" bson:"av5gAka"`
+	Av5gAka            Av5gAka                     `json:"av5gAka" yaml:"av5gAka" bson:"av5gAka"`
 	AvEapAkaPrime      string                      `json:"avEapAkaPrime" yaml:"avEapAkaPrime" bson:"avEapAkaPrime"`
 	Links              map[string]LinksValueSchema `json:"_links" yaml:"_links" bson:"_links"`
 	ServingNetworkName string                      `json:"servingNetworkName,omitempty" yaml:"servingNetworkName" bson:"servingNetworkName"`
